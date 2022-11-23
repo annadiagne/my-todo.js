@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COURS JS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cours.css">
+</head>
+<body>
+     <h1>TITRE PRINCIPAL</h1>
+     <form>
+     <p>premier paragraphe</p>
+     <button id="btn">Cliquez-Moi!</button>
+     <div id="d">
+     	<p>un paragraphe dans un div</p>
+     	<p>un autre paragraphe dans un div</p>
+     </div>
+</form>
+     <div id ="pers"></div>
+     	<script type="text/javascript">/*
+     	var btn=document.getElementById("btn")
+     		btn.onclick=function(){
+     			alert("button clique")
+     		}
+     		var d=document.getElementById("d")
+     		d.onmouseover=function(){
+     			this.style.backgroundColor='orange'
+     		}
+     		d.onmouseout=function(){
+     			this.style.backgroundColor='pink'
+     	    var btn=document.getElementById("btn")
+     	    btn.addEventListener('click',function(){
+     		    alert('Bouton clique ')
+     	    })
+     	    var d=document.getElementById("d")
+     	    d.addEventListener('mouseover',function(){
+     	    	this.style.backgroundColor='pink'
+     	    })
+     	    d.addEventListener('mouseout',function(){
+     	    	this.style.backgroundColor='white'											
+     	     })*/
+     	    var personne = {
+     	    	"prenom":"Anna",
+     	    	"nom":"DIAGNE",
+     	    	"age":35                                                                              
+     	    	"soeur":[
+     	    	    {
+     	    	        "prenom":"Madjiguene",
+     	    	        "nom":"DIAGNE",	
+      	    	        "age":20
+     	    	    }
+     	    	    {
+     	    	        "prenom":"Ndeya",
+     	    	        "nom":"DIAGNE",
+     	              "age":16
+     	    	    }
+     	    	]
+
+     	    	}
+     	    	var ana= ANA.stringify(personne)
+               var divPers = document.getElementById('pers')
+               divPers.innerHTML/*POUR ECRIRE*/= ana
+     	    	
+	</script>
+</body>
+</html>
